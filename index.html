@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnoVentrix MR 1.0 - Innovate. Code. Sustain.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.9)), url('https://placehold.co/1920x1080/1a202c/718096?text=Tech+Background') no-repeat center center/cover;
+        }
+        .section-title {
+            border-left: 4px solid #4ade80;
+            padding-left: 1rem;
+        }
+        .countdown-box {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        .btn-primary {
+            background-color: #4ade80;
+            color: #1a202c;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #36b36a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(74, 222, 128, 0.3);
+        }
+        .card {
+            background-color: #1f2937;
+            border: 1px solid #374151;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -1px;
+            top: 1rem;
+            bottom: 0;
+            width: 2px;
+            background-color: #374151;
+        }
+         .timeline-item:last-child::before {
+            display: none;
+        }
+        .timeline-dot {
+            position: absolute;
+            left: -9px;
+            top: 1rem;
+            width: 20px;
+            height: 20px;
+            background-color: #4ade80;
+            border-radius: 50%;
+            border: 4px solid #1f2937;
+        }
+        .faq-item {
+            background-color: #1f2937;
+            border-bottom: 1px solid #374151;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-800">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">InnoVentrix <span class="text-green-400">MR 1.0</span></a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="text-gray-300 hover:text-green-400 transition">About</a>
+                <a href="#theme" class="text-gray-300 hover:text-green-400 transition">Theme</a>
+                <a href="#schedule" class="text-gray-300 hover:text-green-400 transition">Schedule</a>
+                <a href="#sponsors" class="text-gray-300 hover:text-green-400 transition">Sponsors</a>
+                <a href="#faq" class="text-gray-300 hover:text-green-400 transition">FAQ</a>
+                <a href="#contact" class="text-gray-300 hover:text-green-400 transition">Contact</a>
+            </div>
+            <a href="#" class="hidden md:block btn-primary font-bold py-2 px-6 rounded-lg">Register Now</a>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-gray-300 hover:text-green-400">About</a>
+            <a href="#theme" class="block py-2 text-gray-300 hover:text-green-400">Theme</a>
+            <a href="#schedule" class="block py-2 text-gray-300 hover:text-green-400">Schedule</a>
+            <a href="#sponsors" class="block py-2 text-gray-300 hover:text-green-400">Sponsors</a>
+            <a href="#faq" class="block py-2 text-gray-300 hover:text-green-400">FAQ</a>
+            <a href="#contact" class="block py-2 text-gray-300 hover:text-green-400">Contact</a>
+            <a href="#" class="block mt-4 btn-primary text-center font-bold py-2 px-6 rounded-lg">Register Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-20 md:py-32">
+        <div class="container mx-auto text-center px-6">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-4">InnoVentrix MR 1.0</h1>
+            <p class="text-2xl md:text-4xl font-semibold text-green-400 mb-8">Innovate. Code. Sustain.</p>
+            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-12">A 24-hour hackathon to build impactful tech solutions for real-world sustainability challenges.</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 md:gap-8 mb-12 text-white">
+                <div class="flex items-center gap-3">
+                    <i class="far fa-calendar-alt text-green-400 text-2xl"></i>
+                    <span class="font-semibold text-lg">27th & 28th Sept 2025</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i class="fas fa-map-marker-alt text-green-400 text-2xl"></i>
+                    <span class="font-semibold text-lg">MRIIRS Campus, T-Block</span>
+                </div>
+                 <div class="flex items-center gap-3">
+                    <i class="far fa-clock text-green-400 text-2xl"></i>
+                    <span class="font-semibold text-lg">24-Hour Hackathon</span>
+                </div>
+            </div>
+
+            <div id="countdown" class="flex justify-center gap-4 md:gap-8 my-10">
+            </div>
+
+            <a href="#" class="btn-primary font-bold py-4 px-10 rounded-lg text-xl">Register for Free!</a>
+            <p class="mt-4 text-gray-400">Organized by Dr. OP Bhalla Foundation</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 section-title">About the Hackathon</h2>
+            <p class="text-gray-400 text-lg max-w-4xl mb-12">
+                InnoVentrix MR 1.0 is an exciting 24-hour hackathon hosted by the Dr. OP Bhalla Foundation, uniting student developers, designers, and innovators from across the region. Our mission is to empower the next generation to create impactful tech solutions for real-world sustainability challenges, carrying forward Dr. O.P. Bhalla's legacy of using innovation for the upliftment of society.
+            </p>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="card p-8 rounded-xl">
+                    <i class="fas fa-lightbulb text-green-400 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Innovate</h3>
+                    <p class="text-gray-400">Develop groundbreaking solutions for pressing environmental and societal issues.</p>
+                </div>
+                <div class="card p-8 rounded-xl">
+                    <i class="fas fa-code text-green-400 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Collaborate</h3>
+                    <p class="text-gray-400">Work in teams of 2-4, bringing diverse skills to create scalable, impactful tech ideas.</p>
+                </div>
+                <div class="card p-8 rounded-xl">
+                    <i class="fas fa-seedling text-green-400 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Grow</h3>
+                    <p class="text-gray-400">Gain hands-on experience, receive mentorship from industry experts, and network with tech leaders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Theme Section -->
+    <section id="theme" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 section-title">Theme: Tech for Sustainability</h2>
+            <p class="text-gray-400 text-lg max-w-4xl mb-12">
+                Our goal is to empower students to build technology-driven solutions that tackle pressing environmental and societal issues. We challenge you to align your solutions with the United Nations Sustainable Development Goals (SDGs).
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="card p-6 rounded-xl text-center hover:bg-green-900/50 transition">
+                    <i class="fas fa-smog text-4xl text-green-400 mb-3"></i>
+                    <h3 class="font-bold text-white">Climate Change</h3>
+                </div>
+                <div class="card p-6 rounded-xl text-center hover:bg-green-900/50 transition">
+                    <i class="fas fa-solar-panel text-4xl text-green-400 mb-3"></i>
+                    <h3 class="font-bold text-white">Clean Energy</h3>
+                </div>
+                <div class="card p-6 rounded-xl text-center hover:bg-green-900/50 transition">
+                    <i class="fas fa-recycle text-4xl text-green-400 mb-3"></i>
+                    <h3 class="font-bold text-white">Waste Management</h3>
+                </div>
+                 <div class="card p-6 rounded-xl text-center hover:bg-green-900/50 transition">
+                    <i class="fas fa-tint text-4xl text-green-400 mb-3"></i>
+                    <h3 class="font-bold text-white">Water Management</h3>
+                </div>
+                 <div class="card p-6 rounded-xl text-center hover:bg-green-900/50 transition">
+                    <i class="fas fa-city text-4xl text-green-400 mb-3"></i>
+                    <h3 class="font-bold text-white">Eco-Urban Living</h3>
+                </div>
+                <div class="card p-6 rounded-xl text-center hover:bg-green-900/50 transition">
+                    <i class="fas fa-globe-asia text-4xl text-green-400 mb-3"></i>
+                    <h3 class="font-bold text-white">UN SDGs</h3>
+                </div>
+                 <div class="card p-6 rounded-xl text-center hover:bg-green-900/50 transition">
+                    <i class="fas fa-lightbulb-on text-4xl text-green-400 mb-3"></i>
+                    <h3 class="font-bold text-white">And More...</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 section-title">Event Schedule</h2>
+            <div class="relative max-w-2xl mx-auto">
+                <div class="timeline-item relative pl-8 pb-8">
+                    <div class="timeline-dot"></div>
+                    <p class="text-green-400 font-semibold">Day 1 - 9:00 AM</p>
+                    <h3 class="text-xl font-bold text-white">Registration & Welcome</h3>
+                </div>
+                <div class="timeline-item relative pl-8 pb-8">
+                    <div class="timeline-dot"></div>
+                    <p class="text-green-400 font-semibold">Day 1 - 10:00 AM</p>
+                    <h3 class="text-xl font-bold text-white">Opening Ceremony & Keynote</h3>
+                </div>
+                <div class="timeline-item relative pl-8 pb-8">
+                    <div class="timeline-dot"></div>
+                    <p class="text-green-400 font-semibold">Day 1 - 11:00 AM</p>
+                    <h3 class="text-xl font-bold text-white">Hacking Begins!</h3>
+                </div>
+                <div class="timeline-item relative pl-8 pb-8">
+                    <div class="timeline-dot"></div>
+                    <p class="text-green-400 font-semibold">Day 1 - 3:00 PM</p>
+                    <h3 class="text-xl font-bold text-white">Mentorship Sessions</h3>
+                </div>
+                 <div class="timeline-item relative pl-8 pb-8">
+                    <div class="timeline-dot"></div>
+                    <p class="text-green-400 font-semibold">Day 2 - 9:00 AM</p>
+                    <h3 class="text-xl font-bold text-white">Hacking Ends</h3>
+                </div>
+                 <div class="timeline-item relative pl-8 pb-8">
+                    <div class="timeline-dot"></div>
+                    <p class="text-green-400 font-semibold">Day 2 - 10:00 AM</p>
+                    <h3 class="text-xl font-bold text-white">Project Presentations</h3>
+                </div>
+                <div class="timeline-item relative pl-8">
+                    <div class="timeline-dot"></div>
+                    <p class="text-green-400 font-semibold">Day 2 - 12:00 PM</p>
+                    <h3 class="text-xl font-bold text-white">Prize Distribution & Closing</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prizes Section -->
+    <section id="prizes" class="py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 section-title inline-block">Prizes & Rewards</h2>
+            <p class="text-gray-400 text-lg max-w-3xl mx-auto mb-12">
+                Compete for amazing cash prizes, exclusive merchandise, certificates, and special category awards!
+            </p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card p-8 rounded-xl border-yellow-400 border-2">
+                    <i class="fas fa-trophy text-yellow-400 text-5xl mb-4"></i>
+                    <h3 class="text-2xl font-bold text-white">Cash Prizes</h3>
+                    <p class="text-gray-400">Substantial cash rewards for the top teams.</p>
+                </div>
+                <div class="card p-8 rounded-xl border-blue-400 border-2">
+                    <i class="fas fa-box-open text-blue-400 text-5xl mb-4"></i>
+                    <h3 class="text-2xl font-bold text-white">Merchandise & Swag</h3>
+                    <p class="text-gray-400">Exclusive goodies and swag for participants.</p>
+                </div>
+                <div class="card p-8 rounded-xl border-green-400 border-2">
+                    <i class="fas fa-certificate text-green-400 text-5xl mb-4"></i>
+                    <h3 class="text-2xl font-bold text-white">Certificates</h3>
+                    <p class="text-gray-400">Certificates of participation and excellence for all.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 section-title inline-block">Our Sponsors</h2>
+            <p class="text-gray-400 text-lg max-w-3xl mx-auto mb-12">
+                This event is made possible by our amazing sponsors. Interested in sponsoring? Get in touch by contacting us at innoventrixmr@gmail.com
+            </p>
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-yellow-400 mb-4">Platinum</h3>
+                    <div class="flex justify-center items-center gap-8 flex-wrap">
+                        <img src="https://placehold.co/200x100/333/ccc?text=Sponsor+Logo" alt="Sponsor" class="h-16 opacity-70 hover:opacity-100 transition">
+                    </div>
+                </div>
+                 <div>
+                    <h3 class="text-2xl font-bold text-gray-300 mb-4">Gold</h3>
+                    <div class="flex justify-center items-center gap-8 flex-wrap">
+                        <img src="https://placehold.co/180x90/333/ccc?text=Sponsor+Logo" alt="Sponsor" class="h-14 opacity-70 hover:opacity-100 transition">
+                        <img src="https://placehold.co/180x90/333/ccc?text=Sponsor+Logo" alt="Sponsor" class="h-14 opacity-70 hover:opacity-100 transition">
+                    </div>
+                </div>
+                 <div>
+                    <h3 class="text-2xl font-bold text-orange-400 mb-4">Silver</h3>
+                    <div class="flex justify-center items-center gap-8 flex-wrap">
+                        <img src="https://placehold.co/160x80/333/ccc?text=Sponsor+Logo" alt="Sponsor" class="h-12 opacity-70 hover:opacity-100 transition">
+                         <img src="https://placehold.co/160x80/333/ccc?text=Sponsor+Logo" alt="Sponsor" class="h-12 opacity-70 hover:opacity-100 transition">
+                         <img src="https://placehold.co/160x80/333/ccc?text=Sponsor+Logo" alt="Sponsor" class="h-12 opacity-70 hover:opacity-100 transition">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-8 text-center section-title inline-block">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="faq-item rounded-lg overflow-hidden">
+                    <button class="w-full text-left p-4 flex justify-between items-center">
+                        <span class="font-semibold text-lg text-white">Who can participate?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="px-4 pb-4 text-gray-400 hidden">
+                        The hackathon is open to all undergraduate and postgraduate college students from any domain. We welcome coders, designers, startup enthusiasts, and anyone with a passion for innovation.
+                    </div>
+                </div>
+                <div class="faq-item rounded-lg overflow-hidden">
+                    <button class="w-full text-left p-4 flex justify-between items-center">
+                        <span class="font-semibold text-lg text-white">What is the team size?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="px-4 pb-4 text-gray-400 hidden">
+                        You can participate in teams of 2 to 4 members.
+                    </div>
+                </div>
+                 <div class="faq-item rounded-lg overflow-hidden">
+                    <button class="w-full text-left p-4 flex justify-between items-center">
+                        <span class="font-semibold text-lg text-white">Is there a registration fee?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="px-4 pb-4 text-gray-400 hidden">
+                        No, participation is completely free!
+                    </div>
+                </div>
+                <div class="faq-item rounded-lg overflow-hidden">
+                    <button class="w-full text-left p-4 flex justify-between items-center">
+                        <span class="font-semibold text-lg text-white">What will be provided at the venue?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="px-4 pb-4 text-gray-400 hidden">
+                        Wi-Fi, extension boards, comfortable seating, food & beverages, mattresses for resting, and 24/7 security will be available.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 pt-16 pb-8">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Get In Touch</h2>
+            <p class="text-gray-400 mb-8">For sponsorship, participation, or any other inquiries, feel free to reach out.</p>
+            <div class="flex justify-center items-center space-x-6 mb-8">
+                <a href="mailto:utkarshgt29@gmail.com" class="text-gray-400 hover:text-green-400 transition text-2xl"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.instagram.com/dr_opbhallafoundation/" target="_blank" class="text-gray-400 hover:text-green-400 transition text-2xl"><i class="fab fa-instagram"></i></a>
+                <a href="tel:+919311375992" class="text-gray-400 hover:text-green-400 transition text-2xl"><i class="fas fa-phone"></i></a>
+                 <a href="https://dropbhallafoundation.org/" target="_blank" class="text-gray-400 hover:text-green-400 transition text-2xl"><i class="fas fa-globe"></i></a>
+            </div>
+            <p class="text-gray-500">&copy; 2025 InnoVentrix MR 1.0 | Organized by Dr. OP Bhalla Foundation. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Countdown Timer
+        const countdownElement = document.getElementById('countdown');
+        const eventDate = new Date('September 13, 2025 09:00:00').getTime();
+
+        const updateCountdown = () => {
+            const now = new Date().getTime();
+            const distance = eventDate - now;
+
+            if (distance < 0) {
+                countdownElement.innerHTML = '<div class="text-2xl font-bold text-green-400">The Hackathon has started!</div>';
+                clearInterval(countdownInterval);
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            countdownElement.innerHTML = `
+                <div class="countdown-box p-4 rounded-lg w-24 text-center">
+                    <div class="text-3xl md:text-4xl font-bold">${days}</div>
+                    <div class="text-sm text-gray-400">Days</div>
+                </div>
+                <div class="countdown-box p-4 rounded-lg w-24 text-center">
+                    <div class="text-3xl md:text-4xl font-bold">${hours}</div>
+                    <div class="text-sm text-gray-400">Hours</div>
+                </div>
+                <div class="countdown-box p-4 rounded-lg w-24 text-center">
+                    <div class="text-3xl md:text-4xl font-bold">${minutes}</div>
+                    <div class="text-sm text-gray-400">Minutes</div>
+                </div>
+                <div class="countdown-box p-4 rounded-lg w-24 text-center">
+                    <div class="text-3xl md:text-4xl font-bold">${seconds}</div>
+                    <div class="text-sm text-gray-400">Seconds</div>
+                </div>
+            `;
+        };
+
+        const countdownInterval = setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item button');
+        faqItems.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
+
+</body>
+</html>
