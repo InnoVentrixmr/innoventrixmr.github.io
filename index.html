@@ -39,28 +39,6 @@
             background-color: #1f2937;
             border: 1px solid #374151;
         }
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -1px;
-            top: 1rem;
-            bottom: 0;
-            width: 2px;
-            background-color: #374151;
-        }
-         .timeline-item:last-child::before {
-            display: none;
-        }
-        .timeline-dot {
-            position: absolute;
-            left: -9px;
-            top: 1rem;
-            width: 20px;
-            height: 20px;
-            background-color: #4ade80;
-            border-radius: 50%;
-            border: 4px solid #1f2937;
-        }
         .faq-item {
             background-color: #1f2937;
             border-bottom: 1px solid #374151;
@@ -103,7 +81,7 @@
         <div class="container mx-auto text-center px-6">
             <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-4">InnoVentrix MR 1.0</h1>
             <p class="text-2xl md:text-4xl font-semibold text-green-400 mb-8">Innovate. Code. Sustain.</p>
-            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-12">A 24-hour hackathon to build impactful tech solutions for real-world sustainability challenges.</p>
+            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-12">A 24-hour Hackathon/Ideathon to build impactful tech solutions for real-world sustainability challenges.</p>
             
             <div class="flex flex-wrap justify-center gap-4 md:gap-8 mb-12 text-white">
                 <div class="flex items-center gap-3">
@@ -124,6 +102,7 @@
             </div>
 
             <a href="#" class="btn-primary font-bold py-4 px-10 rounded-lg text-xl">Register for Free!</a>
+            <br>
             <p class="mt-4 text-gray-400">Organized by Dr. OP Bhalla Foundation & CSI MRIIRS</p>
         </div>
     </section>
@@ -131,9 +110,9 @@
     <!-- About Section -->
     <section id="about" class="py-20 bg-gray-900">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 section-title">About the Hackathon</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 section-title">About the Hackathon/Ideathon</h2>
             <p class="text-gray-400 text-lg max-w-4xl mb-12">
-                InnoVentrix MR 1.0 is an exciting 24-hour hackathon hosted by the Dr. OP Bhalla Foundation, uniting student developers, designers, and innovators from across the region. Our mission is to empower the next generation to create impactful tech solutions for real-world sustainability challenges, carrying forward Dr. O.P. Bhalla's legacy of using innovation for the upliftment of society.
+                InnoVentrix MR 1.0 is an exciting 24-hour Hackathon/Ideathon hosted by the Dr. OP Bhalla Foundation, uniting student developers, designers, and innovators from across the region. Our mission is to empower the next generation to create impactful tech solutions for real-world sustainability challenges, carrying forward Dr. O.P. Bhalla's legacy of using innovation for the upliftment of society.
             </p>
             <div class="grid md:grid-cols-3 gap-8 text-center">
                 <div class="card p-8 rounded-xl">
@@ -199,41 +178,98 @@
     <section id="schedule" class="py-20 bg-gray-900">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 section-title">Event Schedule</h2>
-            <div class="relative max-w-2xl mx-auto">
-                <div class="timeline-item relative pl-8 pb-8">
-                    <div class="timeline-dot"></div>
-                    <p class="text-green-400 font-semibold">Day 1 - 9:00 AM</p>
-                    <h3 class="text-xl font-bold text-white">Registration & Welcome</h3>
+            <div class="grid md:grid-cols-2 gap-x-16 gap-y-12">
+                <!-- Hackathon Schedule -->
+                <div>
+                    <h3 class="text-2xl font-bold text-green-400 mb-8 text-center md:text-left">Hackathon Schedule</h3>
+                    <div class="relative border-l-2 border-gray-700 pl-8 space-y-8">
+                        <div class="relative">
+                            <p class="text-green-400 font-semibold">9:00 AM</p>
+                            <h4 class="text-xl font-bold text-white">Registration & Welcome</h4>
+                            <p class="text-gray-400">Participants check in, collect kits/passes, and network.</p>
+                        </div>
+                        <div class="relative">
+                            <p class="text-green-400 font-semibold">10:00 AM</p>
+                            <h4 class="text-xl font-bold text-white">Opening Ceremony & Keynote</h4>
+                            <p class="text-gray-400">Formal inauguration, theme introduction, and keynote speeches.</p>
+                        </div>
+                        <div class="relative">
+                            <p class="text-green-400 font-semibold">11:00 AM</p>
+                            <h4 class="text-xl font-bold text-white">Hacking Begins!</h4>
+                            <p class="text-gray-400">Teams start coding, designing, and building their prototypes.</p>
+                        </div>
+                        <div class="relative">
+                            <p class="text-green-400 font-semibold">1:00 PM</p>
+                            <h4 class="text-xl font-bold text-white">Lunch</h4>
+                            <p class="text-gray-400">A break to refuel and connect with other teams.</p>
+                        </div>
+                        <div class="relative">
+                            <p class="text-green-400 font-semibold">3:00 PM</p>
+                            <h4 class="text-xl font-bold text-white">Mentorship Sessions</h4>
+                            <p class="text-gray-400">Teams receive guidance from expert mentors to refine their ideas.</p>
+                        </div>
+                        <div class="relative">
+                            <p class="text-green-400 font-semibold">7:00 PM</p>
+                            <h4 class="text-xl font-bold text-white">Dinner</h4>
+                            <p class="text-gray-400">Dinner break to recharge before the night-long sprint.</p>
+                        </div>
+                        <div class="relative">
+                            <p class="text-green-400 font-semibold">9:00 PM</p>
+                            <h4 class="text-xl font-bold text-white">Mini Games & Activities</h4>
+                            <p class="text-gray-400">Fun activities to refresh minds and foster networking.</p>
+                        </div>
+                        <div class="relative">
+                            <p class="text-green-400 font-semibold">7:00 AM (Next Day)</p>
+                            <h4 class="text-xl font-bold text-white">Breakfast</h4>
+                            <p class="text-gray-400">Morning meal before the final development push.</p>
+                        </div>
+                        <div class="relative">
+                            <p class="text-green-400 font-semibold">9:00 AM (Next Day)</p>
+                            <h4 class="text-xl font-bold text-white">Hacking Ends</h4>
+                            <p class="text-gray-400">Final submission deadline for projects.</p>
+                        </div>
+                        <div class="relative">
+                            <p class="text-green-400 font-semibold">10:00 AM (Next Day)</p>
+                            <h4 class="text-xl font-bold text-white">Presentations</h4>
+                            <p class="text-gray-400">Teams pitch and demo their solutions to the judging panel.</p>
+                        </div>
+                         <div class="relative">
+                            <p class="text-green-400 font-semibold">12:00 PM (Next Day)</p>
+                            <h4 class="text-xl font-bold text-white">Prize Distribution & Closing</h4>
+                            <p class="text-gray-400">Announcement of winners, followed by closing remarks.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="timeline-item relative pl-8 pb-8">
-                    <div class="timeline-dot"></div>
-                    <p class="text-green-400 font-semibold">Day 1 - 10:00 AM</p>
-                    <h3 class="text-xl font-bold text-white">Opening Ceremony & Keynote</h3>
-                </div>
-                <div class="timeline-item relative pl-8 pb-8">
-                    <div class="timeline-dot"></div>
-                    <p class="text-green-400 font-semibold">Day 1 - 11:00 AM</p>
-                    <h3 class="text-xl font-bold text-white">Hacking Begins!</h3>
-                </div>
-                <div class="timeline-item relative pl-8 pb-8">
-                    <div class="timeline-dot"></div>
-                    <p class="text-green-400 font-semibold">Day 1 - 3:00 PM</p>
-                    <h3 class="text-xl font-bold text-white">Mentorship Sessions</h3>
-                </div>
-                 <div class="timeline-item relative pl-8 pb-8">
-                    <div class="timeline-dot"></div>
-                    <p class="text-green-400 font-semibold">Day 2 - 9:00 AM</p>
-                    <h3 class="text-xl font-bold text-white">Hacking Ends</h3>
-                </div>
-                 <div class="timeline-item relative pl-8 pb-8">
-                    <div class="timeline-dot"></div>
-                    <p class="text-green-400 font-semibold">Day 2 - 10:00 AM</p>
-                    <h3 class="text-xl font-bold text-white">Project Presentations</h3>
-                </div>
-                <div class="timeline-item relative pl-8">
-                    <div class="timeline-dot"></div>
-                    <p class="text-green-400 font-semibold">Day 2 - 12:00 PM</p>
-                    <h3 class="text-xl font-bold text-white">Prize Distribution & Closing</h3>
+                <!-- Ideathon Schedule -->
+                <div>
+                    <h3 class="text-2xl font-bold text-green-400 mb-8 text-center md:text-left">Ideathon Schedule</h3>
+                    <div class="relative border-l-2 border-gray-700 pl-8 space-y-8">
+                        <div class="relative">
+                            <p class="text-green-400 font-semibold">9:00 AM</p>
+                            <h4 class="text-xl font-bold text-white">Registration & Welcome</h4>
+                            <p class="text-gray-400">Participants check in and get an overview of the event.</p>
+                        </div>
+                        <div class="relative">
+                            <p class="text-green-400 font-semibold">10:00 AM</p>
+                            <h4 class="text-xl font-bold text-white">Opening Ceremony & Keynote</h4>
+                            <p class="text-gray-400">Formal inauguration and introduction to the event theme.</p>
+                        </div>
+                        <div class="relative">
+                            <p class="text-green-400 font-semibold">11:00 AM</p>
+                            <h4 class="text-xl font-bold text-white">Bring Life to Your Ideas</h4>
+                            <p class="text-gray-400">Participants brainstorm innovative, non-technical solutions.</p>
+                        </div>
+                        <div class="relative">
+                            <p class="text-green-400 font-semibold">1:00 PM</p>
+                            <h4 class="text-xl font-bold text-white">Snacks</h4>
+                            <p class="text-gray-400">Enjoy light snacks while continuing discussions.</p>
+                        </div>
+                        <div class="relative">
+                            <p class="text-green-400 font-semibold">3:00 PM</p>
+                            <h4 class="text-xl font-bold text-white">Ideathon Ends & Results Announced</h4>
+                            <p class="text-gray-400">Teams present concepts, and winners are declared.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -310,7 +346,7 @@
                         <i class="fas fa-chevron-down transition-transform"></i>
                     </button>
                     <div class="px-4 pb-4 text-gray-400 hidden">
-                        The hackathon is open to all undergraduate and postgraduate college students from any domain. We welcome coders, designers, startup enthusiasts, and anyone with a passion for innovation.
+                        The Hackathon/Ideathon is open to all undergraduate and postgraduate college students from any domain. We welcome coders, designers, startup enthusiasts, and anyone with a passion for innovation.
                     </div>
                 </div>
                 <div class="faq-item rounded-lg overflow-hidden">
@@ -369,14 +405,14 @@
 
         // Countdown Timer
         const countdownElement = document.getElementById('countdown');
-        const eventDate = new Date('September 13, 2025 09:00:00').getTime();
+        const eventDate = new Date('September 20, 2025 09:00:00').getTime();
 
         const updateCountdown = () => {
             const now = new Date().getTime();
             const distance = eventDate - now;
 
             if (distance < 0) {
-                countdownElement.innerHTML = '<div class="text-2xl font-bold text-green-400">The Hackathon has started!</div>';
+                countdownElement.innerHTML = '<div class="text-2xl font-bold text-green-400">The Hackathon/Ideathon has started!</div>';
                 clearInterval(countdownInterval);
                 return;
             }
@@ -410,12 +446,21 @@
         updateCountdown(); 
 
         
+        // FAQ Accordion
         const faqItems = document.querySelectorAll('.faq-item button');
         faqItems.forEach(button => {
             button.addEventListener('click', () => {
                 const content = button.nextElementSibling;
                 const icon = button.querySelector('i');
                 
+                // Close all other FAQ items
+                faqItems.forEach(otherButton => {
+                    if (otherButton !== button) {
+                        otherButton.nextElementSibling.classList.add('hidden');
+                        otherButton.querySelector('i').classList.remove('rotate-180');
+                    }
+                });
+
                 content.classList.toggle('hidden');
                 icon.classList.toggle('rotate-180');
             });
@@ -424,8 +469,3 @@
 
 </body>
 </html>
-
-
-
-
-
